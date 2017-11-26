@@ -19,4 +19,9 @@ public class SleepInTest {
       assertEquals(true, new SleepIn().getSleepInStatus(false, true));
     }
 
+    @Test
+    public void ReturnTrueWhenWeekdayIsTrueAndVacationIsTrue() {
+      assertEquals(true, new SleepIn().getSleepInStatus(true, true));
+    }
+
 }
